@@ -1,0 +1,969 @@
+body {
+    background: url(../images/bg.jpg) no-repeat ;
+        background-size: 106% auto;
+}
+/* 文字加粗 */
+.strong {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+/* 文字变小,改颜色 */
+.small {
+    font-size: 12px;
+    color: #999999;
+}
+
+.header {
+    background: rgba(0,0,0,0.8);
+}
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    height: 84px;
+    margin: 0 auto;
+    position: relative;
+}
+.header_nav h1 {
+    position: absolute;
+    top: 14px;
+
+}
+.header_nav h1 a {
+    display: block;
+}
+.header_nav ul li{
+    float: left;
+    width: 115px;
+    height: 84px;
+    text-align: center;
+}
+.header_nav ul li a{
+    display: block;
+    width: 110px;
+    padding: 20px 0 0;
+    color: #c9c9dd;
+    font-size: 18px;
+    line-height: 30px;
+}
+.header_nav ul li em {
+    display: block;
+    padding-top: 5px;
+    transform: scale(0.95);
+    font-size: 12px;
+    line-height: 16px;
+    color: #858792;
+}
+.main_nav {
+    padding-left: 230px;
+}
+.login {
+    margin: auto;
+    color: #858792;
+}
+.login dt {
+    float: left;
+    margin-right: 10px;
+}
+.login dt img{
+   border: 1px solid #d9ad50;
+   border-radius: 42px;
+}
+.login dd p {
+    float: left;
+}
+.login dd p a {
+    color: #ffffff;
+    font-size: 16px;
+}
+.header_sub {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,0.7);
+    transition: height 0.2s ease;
+}
+.down_nav {
+    width: 890px;
+    /* height: 240px; */
+    margin: 0 auto;
+    padding: 15px 0 0px 9px;
+}
+.down_nav li {
+    display: inline;
+    float: left;
+    width: 110px;
+    margin: 0 5px;
+    /* text-align: center; */
+    white-space: nowrap;
+}
+.down_nav li div {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+.down_nav li div a {
+    font-size: 14px;
+    color: #c9c9dd;
+}
+.down_nav li a:hover {
+    color: #f3c258;
+    border-bottom: 1px solid #f3c258;
+}
+.header:hover .header_sub {
+    height: 260px;
+}
+/* 主体部分版心 */
+.w {
+    margin: 0 auto;
+    width: 1200px;
+    /* height: 440px; */
+    /* background: url(#); */
+}
+.main_top {
+    position: relative;
+    display: flex;
+    background: url(../images/rotate_bg.png) no-repeat left top;
+    margin-bottom: 10px;
+}
+.slides {
+    width: 604px;
+    height: 342px;
+    overflow: hidden;
+}
+.slide {
+    display: flex;
+    width: 3020px;
+    animation: www 10s ease 1s infinite;
+}
+
+@keyframes www {
+    0% {
+        transform: translateX(0);
+    }
+     15% {
+        transform: translateX(0);
+    }
+     17% {
+        transform: translateX(-604px);
+    }
+     32% {
+        transform: translateX(-604px);
+    }
+     34% {
+        transform: translateX(-1208px);
+    }
+     47% {
+        transform: translateX(-1208px);
+    }
+     49% {
+        transform: translateX(-1812px);
+    }
+     64% {
+        transform: translateX(-1812px);
+    }
+     66% {
+        transform: translateX(-2416px);
+    }
+     81% {
+        transform: translateX(-2416px);
+    }
+     83% {
+        transform: translateX(-3020px);
+    }
+    100% {
+        transform: translateX(-3020px);
+    }
+}
+.btn {
+    display: flex;
+}
+.btn a { 
+    display: block;
+    width: 121px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #000;
+    color: #ffffff;
+}
+.btn a:hover {
+    color: #f3c258;
+    background-color: rgb(38, 38, 38);
+}
+
+
+.news_center {
+    width: 360px;
+    height: 342px;
+    padding: 0 17px;
+}
+.news_center>ul {
+    height: 52px;
+}
+.news_center>ul li {
+    float: left;
+    border-bottom: 1px solid #000;
+}
+.news_center>ul li a {
+    display: block;
+    width: 52px;
+    height: 49px;
+    font-size: 14px;
+    color: #b8b9c5;
+    text-align: center;
+    line-height: 48px;
+}
+.news_center>ul li a:hover {
+    color: #f3c258;
+    background-color: rgb(38, 38, 38);
+    border-bottom: 3px solid #f3c258;
+}
+
+/* 因为下面要使用,这里先不研究了,需要修改的 */
+
+/* .news_center_end {
+    display: flex;
+    width: 1535px;
+    overflow: hidden;
+} */
+.news_center_end ul li {
+    margin-bottom: 12px;
+    line-height: 15px;
+}
+.news_center_end ul li em{
+    font-size: 12px;
+    color: #b8b9c5;
+}
+.news_center_end .line_sp {
+    line-height: 36px;
+    padding: 0 15px;
+    margin-top: 18px;
+    background: #414046;
+}
+.news_center_end .line_sp a {
+    text-align: left;
+    font-size: 18px;
+    color: #f3c258;
+}
+.news_tittle {
+    width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+}
+.news_type {
+    display: inline-block;
+    width: 32px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-right: 5px;
+    color: #ff3636;
+    border: 1px solid #ff3636; 
+    vertical-align: middle;
+}
+
+
+
+.download {
+    width: 236px;
+    height: 342px;
+}
+.download a {
+    width: 236px;
+    display: block;
+}
+.tu_1 {
+    position: relative;
+    height: 128px;
+    background: url(../images/精灵图.png) 0 -219px;
+    overflow: hidden;
+}
+.tu_2 {
+    height: 107px;
+    background: url(../images/精灵图.png) 0 -350px;
+}
+.tu_3 {
+    height: 107px;
+    background: url(../images/精灵图.png) -1px -461px;
+}
+.shiling {
+    position: absolute;
+    top: 0px;
+    right: -58px;
+    width: 53px;
+    height: 68px;
+    background:url(../images/shiling.png);
+}
+.chengmi {
+    position: absolute;
+    top: 74px;
+    right: -58px;
+    width: 53px;
+    height: 47px;
+    background:url(../images/fanchenmi.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.quick {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.quick div {
+    width: 291px;
+    height: 134px;
+    overflow: hidden;
+}
+.quick div img {
+    transition: all .2s ease;
+}
+/* 盒子漂浮 */
+/* .trans:hover{
+    transform:scale(1.1);
+}
+添加一个过渡动画,谁有动画给谁加
+.trans {
+    transition: all .2s ease;
+    加一个溢出隐藏,更加美观 这个地方加不了,给它的父盒子加 
+    overflow: hidden;
+} */
+.quick div img:hover{
+    transform:scale(1.1);
+}
+
+
+.main_middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle_1 {
+    width: 872px;
+    min-height: 528px;
+    /* margin-right: 33px; */
+}
+.middle_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.middle_top em a {
+    padding-left: 22px;
+    background: url(../images/精灵图.png)no-repeat -252px 1px;
+    color: #999;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+
+/* 嵌套样式 */
+/* 以下是两个盒子的公共部分 */
+.aaa {
+    display: flex;
+    justify-content: space-between;
+}
+.aaa dd {
+    position: relative;
+}
+/* 给最外面的设置一个样式 */
+.aaa>dd>a{
+    display: block;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    border-bottom: 3px solid #f5f5f5;
+    background-color: rgb(245, 245, 245);
+}
+.aaa>dd>a:hover {
+    color: #000;
+    border-color:  #f3c258;
+}
+.middle_1_content .aaa>dd>a {
+            width: 289px;
+}
+.middle_2_content .aaa>dd>a {
+            width: 98.3px;
+            margin-bottom: 19px;
+}
+.match_center .aaa>dd>a {
+    width: 100px;
+    /* margin-bottom: 19px; */
+}
+/* 添加一个隐藏 */
+.xiang {
+    position: absolute;
+    height: 0;
+    /* background-color: blue; */
+    overflow: hidden;
+    opacity: 0;
+    background-color: white;
+}
+.middle_1_content .xiang {
+    width: 872px;
+}
+.middle_2_content .xiang {
+    width: 295px;
+    /* margin-top: 19px; */
+}
+.match_center .xiang {
+    width: 872px;
+}
+.middle_1_content .aaa>dd:hover .xiang{
+    height: 430px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.middle_2_content .aaa>dd:hover .xiang{
+    height: 400px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.match_center .aaa>dd:hover .xiang {
+    height: 745px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* 盒中盒 */
+.bbb {
+    display: flex;
+    /* width: 100%; */
+    justify-content:flex-start;
+}
+.bbb>dd {
+    position: relative;
+    margin-right: 10px;
+}
+.bbb>dd>a{
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 13px 0 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: #f5f5f5;
+    font-size: 14px;
+    color: #333;
+    margin:15px 0;
+}
+.ship {
+    position: absolute;
+    width: 872px;
+    height: 0;
+    /* background-color: #d9ad50; */
+    overflow: hidden;
+    background-color: white;
+}
+.bbb>dd>a:hover {
+    color: #fff;
+    background-color: #f3c258;
+    border-color: #f3c258;
+}
+.bbb>dd:hover .ship{
+    height: 300px;
+}
+
+/* 每一行四个 */
+/* .ship .vido */
+.vido {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    /* width: 212px; */
+}
+.vido img {
+    width: 209px;
+    height: 125px;
+
+}
+.vido .span_2 {
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    color: #333333;
+    margin-top: 10px;
+}
+.middle_2 {
+    width: 295px;
+    /* background-color: pink; */
+}
+.match_center .match_news {
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-between;
+}
+.match_center .news_center_end {
+    width: 630px;
+}
+.match_center .news_center_end .line_sp {
+    background: none;
+    /* 这个地方给宽度是因为tittle有两个，不能及时换行，所以宽度设小，挤到下一行 */
+    width: 577px;
+    margin: 0;
+    padding: 0;
+    height: 66px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.match_center .news_center_end .line_sp a{
+    font-size: 24px;
+    color: #333;
+}
+.match_center .news_center_end .news_tittle {
+    width: 577px;
+}
+.news_tittle_2 {
+    line-height: 23px;
+    font-size: 14px;
+    color: #666666;
+    width: 450px;
+    font-weight: normal;
+}
+
+.match_center .news_type {
+    /* 之前的转化过行内块了 */
+    /* display: inline-block; */
+    width: 55px;
+    height: 20px;
+    line-height: 16px;
+    margin-right: 6px;
+    background: #e3e3e3;
+    border-radius: 10px;
+    border: 2px solid #e3e3e3;
+    text-align: center;
+    color: #999999;
+    text-indent: 2px;
+}
+.match_center .news_txt {
+    display: inline-block;
+    width: 470px;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.match_center .news_txt a:hover {
+    color: #333;
+    display: inline-block;
+    border-bottom: 1px solid #333;
+}
+.match_center .news_center_end li {
+    margin-bottom: 12px;
+}
+
+.match_center .match_vido {
+    position: absolute;
+    display: flex;
+    width: 872px;
+    height: 410px;
+    left: 0;
+    top: 325px;
+    /* background-color: pink;    */
+}
+
+
+
+
+
+
+.match_schedule ul li span {
+    display: inline-block;
+}
+/* 时间 */
+.z1 {
+    width: 80px;
+    color: #333333;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: top;
+}
+/* 战队名 */
+.z2 {
+    width: 79px;
+    height: 67px;
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+}
+.z2 img {
+    overflow: hidden;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 10px auto 0 auto;
+    border-radius: 50%;
+}
+.z2 em {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 24px;
+    vertical-align: top;
+    white-space: nowrap;
+}
+/* VS */
+.z3 {
+    font-size: 14px;
+    width: 43px;
+    color: #f3c258;
+    text-align: center;
+    vertical-align: top;
+}
+.match_schedule ul li {
+    height: 67px;
+    line-height: 67px;
+    border-bottom: 1px solid #e5e5e5;
+ }
+footer {
+    /* position: relative;
+    z-index: 2; */
+    height: 362px;
+    background: url(../images/bg_footer.jpg) no-repeat center 0;
+}
+
+.foot {
+    position: relative;
+    width: 1200px;
+    padding-top: 80px;
+}
+.foot_logo {
+    padding-bottom: 12px;
+    border-bottom: 2px solid #d4d4d4;
+}
+.foot_logo_1 {
+    display: inline-block;
+    width: 278px;
+    height: 48px;
+    background: url(../images/spr.png) 0 -12px;
+}
+.foot_logo_2 {
+    display: inline-block;
+    width: 59px;
+    height: 54px;
+    background: url(../images/spr.png) -294px -5px;
+}
+.foot_end {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #6d6d6d;
+}
+.foot_end p {
+    margin-top: 12px;
+}
+.foot_left {
+    width: 522px;
+    
+}
+.foot_left em {
+     margin-right: 12px;
+}
+.foot_right {
+    position: relative;
+    width: 650px;
+}
+.foot_right a {
+    color: #6d6d6d;
+}
+
+/* 土豆盒子 */
+.vido a {
+    position: relative;
+}
+.vido a::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 126px;
+        overflow: hidden;
+    background: rgba(0,0,0,0);
+    background-position: 50% 50%;
+    /* transform: scale(2.5); */
+    transition: background .4s ease-in-out;
+}
+.vido a:hover::before {
+    /* 变得不透明了 */
+    background: rgba(0,0,0,0.6) url(../images/图层2.png) no-repeat center;
+    transform: none;
+}
+
+
+.en {
+    display: flex;
+    justify-content: space-between;
+}
+/* 文字背景土豆盒子 */
+.en a{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+}
+/* 因为伪元素选择器会层叠掉,后面的伪元素选择器会替换掉前面样式 */
+.en a:before {
+    position: absolute;
+    opacity: 0;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    background-position: 50% 50%;
+    transition: opacity .4s ease-in-out;
+}
+.en a:hover {
+    color: rgb(242, 193, 88);
+}
+.en a:hover::before {
+     /* 变得不透明了 */
+     opacity: 1;
+    transform: none;
+}
+.en a:hover span {
+    display: inline-block;
+}
+/* .en .a2:before {
+    position: absolute;
+    opacity: 0;
+    content: '莱西奥';
+    writing-mode: vertical-rl;
+    line-height: 70px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    background-position: 50% 50%;
+    transition: opacity .4s ease-in-out;
+} */
+.en a span{
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 26px;
+    text-align: center;
+    color: #f3c258;
+    font-size: 14px;
+    width: 34px;
+    height: 100%;
+    line-height: 16px;
+    padding-left: 2px;
+    /* 文字竖直显示属性 */
+    writing-mode: vertical-lr;
+    letter-spacing: 0.3em;
+    word-break: break-all;
+}
+
+
+/* 固定定位 */
+.fix {
+    position: fixed;
+    right: 60px;
+    top: 245px;
+    z-index: 2;
+    background: rgba(0,0,0,0.3);
+}
+.fix li {
+    position: relative;
+}
+
+.fix_image_1 {
+    width: 117px;
+    height: 134px;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    background: url(../images/r_all2022.png) -243px 0;
+}
+.fix_image_1  img{
+    width: 107px;
+    height: 107px;
+}
+
+
+/* 装有图片的盒子 */
+.fix_image {
+    width: 117px;
+    height: 150px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+.fix_image  img{
+    width: 107px;
+    height: 107px;
+}
+.fix_image p {
+    font-size: 12px;
+}
+.fix li a{
+    display: block;
+    width: 117px;
+    height: 38px;
+}
+/* 旁边浮动的盒子 */
+.fix li div {
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    top: -68px;
+    right: 116px;
+    /* width: 117px; */
+    width: 0;
+    transition: opacity .5s ease;
+}
+.fix li:hover div {
+    opacity: 1;
+    width: 117px;
+
+}
+
+.line_2 a {
+    background: url(../images/r_all2022.png) 0 -160px;
+}
+.line_2:hover a{
+    background: url(../images/r_all2022.png) -243px -172px;
+}
+
+.line_3 a {
+    background: url(../images/r_all2022.png) -122px -120px;
+}
+.line_3:hover a{
+    background: url(../images/r_all2022.png) -122px -240px;
+}
+.line_4 a {
+    background: url(../images/r_all2022.png) -122px -160px;
+}
+.line_4:hover a{
+    background: url(../images/r_all2022.png) -122px -200px;
+}
+.line_5 a {
+    background: url(../images/r_all2022.png) 0 -122px;
+}
+.line_5:hover a{
+    background: url(../images/r_all2022.png) 0 -200px;
+}
+.dj {
+    position: fixed;
+    top: 99px;
+    right: 70px;
+    z-index: 2;
+    width: 165px;
+    height: 145px;
+    background: url(../images/r_dj.png) no-repeat top center;
+}
+.dj p {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 12px;
+    width: 88px;
+    height: 36px;
+    font-size: 14px;
+    text-indent: 2px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #62401b;
+    overflow: hidden;
+}
+
+.hot_1 {
+    background-position: -165px -70px;
+}
+.hot_2 {
+    background-position: -141px -70px;
+}
+.hot_3 {
+    background-position: -140px -8px;
+}
+.m-sp {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    background-image: url(../images/精灵图.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.ps_1::before{
+    display: inline-block;
+    content: " ";
+    width: 22px;
+    height: 23px;
+    margin-right: 5px;
+    background: url(../images/精灵图.png) -1px -107px;
+    vertical-align: top;
+}
+.ps_2::before{
+    display: inline-block;
+    content: " ";
+    width: 18px;
+    height: 25px;
+    margin-right: 5px;
+    background: url(../images/精灵图.png) -1px -144px;
+    vertical-align: top;
+}
+.ps_3::before{
+    display: inline-block;
+    content: " ";
+    width: 24px;
+    height: 29px;
+    margin-right: 5px;
+    background: url(../images/精灵图.png) -2px -182px;
+    vertical-align: top;
+}
+.ps_4::before{
+    display: inline-block;
+    content: " ";
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+    background: url(../images/精灵图.png) -157px -107px;
+    vertical-align: top;
+}
+
+.light {
+    /* 为什么行内元素,可以设置宽和高呢 */
+    /* 因为脱离了标准流 */
+    display: inline;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.8);
+    transform: rotate(-45deg);
+    animation: lightmove 2.6s ease-in infinite;
+    filter: blur(32px);
+}
+@keyframes lightmove {
+    0% {
+        top: -50px;
+        left: -300px;
+    }
+    100% {
+    top: 50px;
+    left: 140px;
+    }
+}
